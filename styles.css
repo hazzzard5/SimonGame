@@ -47,6 +47,12 @@ body {
   background-color: yellow;
 }
 
+button {
+  font-size: 14px;
+  border-radius: 5%;
+  margin: 15px;
+  padding: 20px;
+}
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;

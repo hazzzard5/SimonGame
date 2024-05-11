@@ -14,6 +14,15 @@ $(document).keypress(function() {
     }
 })
 
+const resetBtn = document.getElementById("reset");
+resetBtn.addEventListener("click", () => {
+    if(!gameStart){
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        gameStart = true;
+    }
+})
+
 
 //Its like this because we want to just trigger it right away of the button clicks instead of assigning them to each ID or creating functions
 $(".btn").on("click", function () {
